@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request
 from pokemon.extensions import db
 from pokemon.models import Pokemon, Type
+import sqlalchemy as sa
 
 core_bp = Blueprint('core', __name__, template_folder='templates')
 
